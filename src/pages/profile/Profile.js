@@ -13,9 +13,9 @@ const Profile = () => {
         <div className='profileRight'>
             <div className='profileRightTop'>
               <div className='profileCover'>
-
-                <img className='profileCoverImg' src="assets/1.jpg" alt="" />
-                <img className='profileUserImg' src="assets/2.avif" alt="" />
+              
+                <img className='profileCoverImg' src="/assets/1.jpg" alt="" />
+                <img className='profileUserImg' src="/assets/2.avif" alt="" />
               </ div>
               <div className='profileInfo'>
                 <h4 className='profileInfoName'> Chirag Sharma</h4>

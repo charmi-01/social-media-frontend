@@ -3,7 +3,7 @@ import "./rightbar.css"
 
 const Rightbar = ({profile}) => {
 
-  const HomeRightbar=()=>{
+  const HomeRightBar=()=>{
     return(
       <>
       <div className='birthdayContainer'>
@@ -17,49 +17,49 @@ const Rightbar = ({profile}) => {
         <ul className='rightbarFriendList'>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
@@ -90,27 +90,27 @@ const Rightbar = ({profile}) => {
       <h4 className='rightbarTitle'> User friends</h4>
       <div className='rightbarFollowings'>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Rightbar = ({profile}) => {
   return (
     <div className='rightbar'>
       <div className='rightbarWrapper'>
-        <ProfileRightBar/>
+        <HomeRightBar/>
       </div>
     </div>
   )
