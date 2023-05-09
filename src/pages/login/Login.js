@@ -4,9 +4,7 @@ import "./login.css"
 
 const Login = () => {
     return (
-        <div className='loginContainer'>
-            
-                 
+        <div className='loginContainer'>     
             <div className='left'>
                 <img src={logo} alt='' />
             </div>

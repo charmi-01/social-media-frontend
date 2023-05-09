@@ -3,7 +3,7 @@
     width: 80vw;
     margin: auto;
     align-items: center;
-    justify-self: center;
+    gap:10px;
 }
 
 .left{
@@ -17,7 +17,11 @@
 }
 
 
-
+.left img{
+    display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 .right{
@@ -27,12 +31,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
 }
 
 .rightTitle{
     text-align: center;
-    font-size: 80px;
+    font-size: 4em ;
     font-weight: 700;
     margin: 10px;
     margin-bottom: 20px;
