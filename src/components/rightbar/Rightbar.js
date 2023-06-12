@@ -120,7 +120,7 @@ const Rightbar = ({profile}) => {
   return (
     <div className='rightbar'>
       <div className='rightbarWrapper'>
-        <HomeRightBar/>
+        <ProfileRightBar/>
       </div>
     </div>
   )

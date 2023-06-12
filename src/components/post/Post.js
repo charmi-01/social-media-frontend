@@ -1,10 +1,21 @@
 import { MoreVert } from "@mui/icons-material"
 import "./post.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
-const Post = () => {
+const Post = ({post}) => {
     const [like,setLike]= useState(4)
     const[isLiked,setIsLiked]=useState(false)
+    const [user, setUser] = useState({});
+
+    // useEffect(() => {
+    //     const fetchUser = async () => {
+    //       const res = await axios.get(`/api/users?userId=${post.userId}`);
+    //       setUser(res.data);
+    //       console.log(user);
+    //     };
+    //     fetchUser();
+    //   }, [post.userId]);
 
     const likehandler=()=>{
         setLike(isLiked? like-1 : like+1)
@@ -17,7 +28,7 @@ const Post = () => {
         <div className="postTop">
             <div className="postTopLeft">
             <img className="postProfileImg" src="/assets/1.jpg" alt=""/>
-                <span className="postUsername">Chirag Sharma</span>
+                <span className="postUsername"></span>
                 <span className="postDate">5 min ago</span>
             </div>
             <div className="postTopRight">
