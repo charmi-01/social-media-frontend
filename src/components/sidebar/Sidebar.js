@@ -48,19 +48,19 @@ const Sidebar = () => {
         <hr className='sidebarHr'/>
         <ul className='sidebarFriendList'>
             <li className='sidebarFriend'>
-              <img  className='sidebarFriendImg' src="/assets/1.jpg" alt="" />
+              <img  className='sidebarFriendImg' src="/assets/post/1.jpg" alt="" />
               <span className='sidebarFriendName'> jane Doe</span>
             </li>
             <li className='sidebarFriend'>
-              <img  className='sidebarFriendImg' src="/assets/1.jpg" alt="" />
+              <img  className='sidebarFriendImg' src="/assets/post/1.jpg" alt="" />
               <span className='sidebarFriendName'> jane Doe</span>
             </li>
             <li className='sidebarFriend'>
-              <img  className='sidebarFriendImg' src="/assets/1.jpg" alt="" />
+              <img  className='sidebarFriendImg' src="/assets/post/1.jpg" alt="" />
               <span className='sidebarFriendName'> jane Doe</span>
             </li>
             <li className='sidebarFriend'>
-              <img  className='sidebarFriendImg' src="/assets/1.jpg" alt="" />
+              <img  className='sidebarFriendImg' src="/assets/post/1.jpg" alt="" />
               <span className='sidebarFriendName'> jane Doe</span>
             </li>
         </ul>

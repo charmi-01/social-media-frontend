@@ -1,7 +1,7 @@
 import React from 'react'
 import "./rightbar.css"
 
-const Rightbar = ({profile}) => {
+const Rightbar = ({user}) => {
 
   const HomeRightBar=()=>{
     return(
@@ -17,49 +17,49 @@ const Rightbar = ({profile}) => {
         <ul className='rightbarFriendList'>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
           </li>
           <li className='rightbarFriend'>
             <div className='rightbarProfileImgContainer'>
-              <img className='rightbarProfileImg' src='/assets/1.jpg' alt=''/>
+              <img className='rightbarProfileImg' src='/assets/post/1.jpg' alt=''/>
               <span className='rightbarOnline'></span>
             </div>
             <span className=''>John Carter</span>
@@ -76,41 +76,41 @@ const Rightbar = ({profile}) => {
       <div className='rightbarInfo'>
         <div className='rightbarInfoItem'>
           <span className='rightbarInfoKey'>City:</span>
-          <span className='rightbarInfoValue'>New Delhi</span>
+          <span className='rightbarInfoValue'>{user.city}</span>
         </div>
         <div className='rightbarInfoItem'>
           <span className='rightbarInfoKey'>From:</span>
-          <span className='rightbarInfoValue'>Delhi</span>
+          <span className='rightbarInfoValue'>{user.from}</span>
         </div>
         <div className='rightbarInfoItem'>
           <span className='rightbarInfoKey'>Relationship:</span>
-          <span className='rightbarInfoValue'>Single</span>
+          <span className='rightbarInfoValue'>{user.relationship ===1?"single": user.relationship ===2? "married":''}</span>
         </div>
       </div>
       <h4 className='rightbarTitle'> User friends</h4>
       <div className='rightbarFollowings'>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
         <div className='rightbarFollowing'>
-          <img className='rightbarFollowingImg' src='/assets/1.jpg' alt=""/>
+          <img className='rightbarFollowingImg' src='/assets/post/1.jpg' alt=""/>
           <span className='rightbarFollowingName'>John Carter</span>
         </div>
       </div>
@@ -120,7 +120,9 @@ const Rightbar = ({profile}) => {
   return (
     <div className='rightbar'>
       <div className='rightbarWrapper'>
-        <ProfileRightBar/>
+        {
+          user ? <ProfileRightBar/> : <HomeRightBar/>
+        }
       </div>
     </div>
   )
